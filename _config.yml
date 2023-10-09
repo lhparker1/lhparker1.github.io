@@ -3,16 +3,16 @@
 # -----------------------------------------------------------------------------
 
 title: François rLanusse # the website title (if blank, full name will be used instead)
-first_name: François
+first_name: Liam
 middle_name:
-last_name: Lanusse
-email: francois.lanusse@cnrs.fr
+last_name: Parker
+email: liamholdenparker@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  François Lanusse's academic website.
+  Liam Parker's academic website.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: cosmology, deep learning # add your own keywords or leave empty
+keywords: cosmology, deep learning, physics # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -65,13 +65,13 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 # Social integration
 # -----------------------------------------------------------------------------
 
-github_username: EiffL # your GitHub user name
+github_username: # your GitHub user name
 gitlab_username: # your GitLab user name
-twitter_username: # your Twitter handle
+twitter_username: liamhparker # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: # your LinkedIn user name
 telegram_username: # your Telegram user name
-scholar_userid: fRDCooIAAAAJ # your Google Scholar ID
+scholar_userid: CjYa0N4AAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
 orcid_id: # your ORCID ID
@@ -229,8 +229,8 @@ jekyll-archives:
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Lanusse]
-  first_name: [François, Francois, F, F.]
+  last_name: [Parker]
+  first_name: [Liam, Liam Holden, L, L.]
 
   style: apa
   locale: en
