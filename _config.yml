@@ -2,10 +2,10 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: François rLanusse # the website title (if blank, full name will be used instead)
-first_name: Liam
+title: Liam Parker # the website title (if blank, full name will be used instead)
+first_name: 
 middle_name:
-last_name: Parker
+last_name: Liam Parker
 email: liamholdenparker@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Liam Parker's academic website.
