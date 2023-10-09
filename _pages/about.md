@@ -6,7 +6,7 @@ subtitle: Physics and Deep Learning at the <a href="https://www.simonsfoundation
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: headshot.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p><small><i class="fas fa-envelope"></i> <a href="mailto:liamholdenparker@gmail.com">liamholdenparker@gmail.com</a></small></p>
