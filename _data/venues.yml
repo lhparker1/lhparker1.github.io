@@ -1,0 +1,5 @@
+# Optional: give a venue badge a link or colour, keyed by the `abbr` used in _bibliography/papers.bib.
+# Example:
+# "JCAP":
+#   url: https://iopscience.iop.org/journal/1475-7516
+#   color: "#00369f"

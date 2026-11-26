@@ -1,0 +1,20 @@
+# Open-source software, shown on the Code page and in the CV page.
+# Fields: name, repo (owner/name on GitHub), stars (text), description (optional)
+- name: Multimodal Universe
+  repo: MultimodalUniverse/MultimodalUniverse
+  stars: 500+
+  description: 100 TB of machine-learning-ready astronomical data.
+- name: AstroCLIP
+  repo: PolymathicAI/AstroCLIP
+  stars: 180+
+  description: A cross-modal foundation model for galaxies.
+- name: AION-1
+  repo: PolymathicAI/AION
+  stars: 150+
+  description: An omnimodal foundation model for astronomical sciences.
+- name: ASTRA
+  repo: LightconeResearch/astra-spec
+  stars: 20+
+- name: Lightcone-CLI
+  repo: LightconeResearch/lightcone-cli
+  stars: 20+

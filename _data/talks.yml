@@ -1,0 +1,77 @@
+# Talks, newest first. Shown on the Talks page and in the CV page.
+# Fields: date, year, venue, kind (optional), upcoming (optional), slides / video (optional URLs)
+- date: Jun. 2027
+  year: 2027
+  venue: New Strategies for Extracting Cosmology from Galaxy Surveys
+  kind: Invited Talk
+  upcoming: true
+- date: Jan. 2027
+  year: 2027
+  venue: Rencontres de Moriond Cosmology Talk
+  upcoming: true
+- date: Jan. 2027
+  year: 2027
+  venue: Winter Meeting, American Astronomical Society
+  upcoming: true
+- date: Dec. 2026
+  year: 2026
+  venue: DESI Paris Winter Meeting Spotlight Talk
+  upcoming: true
+- date: Nov. 2026
+  year: 2026
+  venue: DESI Lunch, Lawrence Berkeley National Lab
+- date: Oct. 2026
+  year: 2026
+  venue: University of California Open Source Program Office Meet Up
+- date: Jul. 2026
+  year: 2026
+  venue: DESI Durham Summer Meeting BAO Talk
+- date: May 2026
+  year: 2026
+  venue: "From Pen and Paper to Petaflops: Cosmology’s 30-Year Transformation, BCCP"
+- date: Dec. 2025
+  year: 2025
+  venue: AI4Science Workshop, Neural Information Processing Systems
+  kind: Oral Spotlight
+- date: Oct. 2025
+  year: 2025
+  venue: AI/ML Seminar Series, Lawrence Berkeley National Lab
+  kind: Invited Talk
+- date: Jul. 2025
+  year: 2025
+  venue: Unifying Data Curation Frameworks Across Domains Workshop, ICML
+  kind: Panelist
+- date: May 2025
+  year: 2025
+  venue: Foundation Models for Astronomy, Flatiron Institute
+- date: May 2025
+  year: 2025
+  venue: Foundation Models for Science, Flatiron Institute
+  kind: Interviewed Dario Amodei in Fireside Chat
+- date: May 2025
+  year: 2025
+  venue: Cosmic Horizons 2025, NSF-Simons CosmicAI Institute
+  kind: Invited Talk
+- date: Apr. 2025
+  year: 2025
+  venue: Galaxy Clustering Group, University of Bonn
+  kind: Invited Talk
+- date: Nov. 2024
+  year: 2024
+  venue: IAC-DEEP, Institute of the Canary Islands
+  kind: Invited Talk
+- date: May 2024
+  year: 2024
+  venue: Machine Learning in Astrophysics, Centre de la Recherche Scientifique
+- date: Apr. 2024
+  year: 2024
+  venue: Simulation-Based Inference for Galaxy Evolution, University of Bristol
+- date: Dec. 2023
+  year: 2023
+  venue: Tri-State Cosmology x ML Meeting, Flatiron Institute
+- date: Nov. 2023
+  year: 2023
+  venue: Machine Learning for Transient Science, Dark Energy Science Collaboration
+- date: Sep. 2023
+  year: 2023
+  venue: Learning the Universe Annual Meeting, Flatiron Institute

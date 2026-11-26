@@ -1,0 +1,5 @@
+# Optional: link co-author names on the publications page to their websites.
+# Keys are lower-cased last names without accents. Example:
+# "seljak":
+#   - firstname: ["Uroš", "Uros", "U."]
+#     url: https://example.org
