@@ -19,3 +19,9 @@ vendor
 # Python bytecode from bin/ helper scripts
 __pycache__/
 *.pyc
+
+# LaTeX build files
+cv/*.aux
+cv/*.log
+cv/*.out
+cv/*.pdf
