@@ -11,7 +11,6 @@ Personal website of Liam H. Parker, built with [Jekyll](https://jekyllrb.com/) a
 | Research sections               | `_pages/research.md`                            |
 | Publications                    | `_bibliography/papers.bib`                      |
 | Code cards                      | `_data/code.yml`                                |
-| Talks                           | `_data/talks.yml`                               |
 | CV (PDF shown on the CV page)   | `cv/CV.tex`, `cv/pubs.tex`, `cv/talks.tex`      |
 | Contact icons on the home page  | `_data/socials.yml`                             |
 | Name, site URL, global settings | `_config.yml`                                   |
