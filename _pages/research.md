@@ -39,9 +39,13 @@ Code: [ASTRA](https://github.com/LightconeResearch/astra-spec), [Lightcone-CLI](
 
 ## Foundation models for astronomy
 
-*Description to come.*
+<figure class="research-figure">
+<img src="/assets/img/aion_overview.png" alt="Overview of the AION model: images, spectra, segmentation maps and physical parameters are tokenized, passed through a transformer encoder and decoder, and the resulting embeddings are used for downstream tasks such as regression, segmentation and retrieval.">
+</figure>
 
-Key papers: [Parker, Lanusse, Shen et al. 2025](https://arxiv.org/abs/2510.17960), [Multimodal Universe Collaboration 2024](https://arxiv.org/abs/2412.02527), [Parker et al. 2024](https://arxiv.org/abs/2310.03024)
+Modern surveys observe the same objects in many ways: images, spectra, photometry, time series. Most analysis is still built one instrument and one task at a time. With collaborators, I have developed methods that combine observations from different surveys in a single model, whose learned representation can be reused across tasks with little or no labeled data. Alongside this, we built large-scale open infrastructure to make the data from these surveys machine-learning ready.
+
+Key papers: [Parker, Lanusse, Shen et al. 2025](https://arxiv.org/abs/2510.17960), [Multimodal Universe Collaboration 2024](https://arxiv.org/abs/2412.02527), [Parker et al. 2024](https://arxiv.org/abs/2310.03024), [Koblischke, Parker et al. 2026](https://arxiv.org/abs/2512.11982)
 
 <div style="clear: both;"></div>
 
