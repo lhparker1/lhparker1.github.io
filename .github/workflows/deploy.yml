@@ -61,7 +61,7 @@ on:
       - "!README.md"
   workflow_dispatch:
   schedule:
-    - cron: "23 7 * * 1" # weekly, to refresh GitHub star counts on the Code page
+    - cron: "23 7 * * *" # daily, to refresh Google Scholar citation counts and GitHub stars
 
 permissions:
   contents: write
@@ -102,6 +102,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/fetch_repo_stats.py
+      - name: Fetch Google Scholar citation counts 🎓
+        continue-on-error: true
+        timeout-minutes: 2
+        run: python3 scripts/fetch_scholar_citations.py
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
