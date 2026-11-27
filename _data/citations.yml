@@ -10,7 +10,7 @@ papers:
     year: "2025"
   "CjYa0N4AAAAJ:0EnyYjriUFMC":
     citations: 41
-    title: "Cosmological constraints from the nonlinea…"
+    title: "Cosmological constraints from the nonlinear galaxy bispectrum"
     year: "2024"
   "CjYa0N4AAAAJ:2osOgNQ5qMEC":
     citations: 25
@@ -18,7 +18,7 @@ papers:
     year: "2023"
   "CjYa0N4AAAAJ:35N4QoGY0k4C":
     citations: 40
-    title: "Walrus: A cross-domain foundation model fo…"
+    title: "Walrus: A cross-domain foundation model for continuum dynamics"
     year: "2025"
   "CjYa0N4AAAAJ:5nxA0vEk-isC":
     citations: 52
@@ -38,15 +38,15 @@ papers:
     year: "2023"
   "CjYa0N4AAAAJ:BqipwSGYUEgC":
     citations: 4
-    title: "Contextual counting: A mechanistic study o…"
+    title: "Contextual counting: A mechanistic study of transformers on a quantitative task"
     year: "2024"
   "CjYa0N4AAAAJ:GnPB-g6toBAC":
     citations: 26
-    title: "Cosmological constraints using simulation-…"
+    title: "Cosmological constraints using simulation-based inference of galaxy clustering with marked power spectra"
     year: "2025"
   "CjYa0N4AAAAJ:J_g5lzvAfSwC":
     citations: 0
-    title: "A Probabilistic Autoencoder for Galaxy SED Reconstruction and Redshift Estimation"
+    title: "A Probabilistic Autoencoder for Galaxy SED Reconstruction and Redshift Estimation: Application to Mock SPHEREx Spectrophotometry"
     year: "2026"
   "CjYa0N4AAAAJ:KlAtU1dfN6UC":
     citations: 217
@@ -54,7 +54,7 @@ papers:
     year: "2024"
   "CjYa0N4AAAAJ:M3NEmzRMIkIC":
     citations: 5
-    title: "Predicting partially observable dynamical …"
+    title: "Predicting partially observable dynamical systems via diffusion models with a multiscale inference scheme"
     year: "2026"
   "CjYa0N4AAAAJ:MXK_kJrjxJIC":
     citations: 52
@@ -66,7 +66,7 @@ papers:
     year: "2024"
   "CjYa0N4AAAAJ:dhFuZR0502QC":
     citations: 41
-    title: "The multimodal universe: enabling large-scale machine learning with 100 TB of astronomical scientific data"
+    title: "The multimodal universe: enabling large-scale machine learning with 100 tb of astronomical scientific data"
     year: "2024"
   "CjYa0N4AAAAJ:e5wmG9Sq2KIC":
     citations: 16
@@ -86,7 +86,7 @@ papers:
     year: "2025"
   "CjYa0N4AAAAJ:ldfaerwXgEUC":
     citations: 0
-    title: "Field-Level Baryon Acoustic Oscillation Reconstruction of the DESI DR1"
+    title: "Field-Level Baryon Acoustic Oscillation Reconstruction of the DESI DR1 Luminous Red Galaxies with Linear Field Transformer (LiFT)"
     year: "2026"
   "CjYa0N4AAAAJ:qxL8FJ1GzNcC":
     citations: 44
@@ -98,5 +98,5 @@ papers:
     year: "2022"
   "CjYa0N4AAAAJ:vV6vV6tmYwMC":
     citations: 3
-    title: "MIMIC: A Generative Multimodal Foundation …"
+    title: "MIMIC: A Generative Multimodal Foundation Model for Biomolecules"
     year: "2026"
