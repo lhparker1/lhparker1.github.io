@@ -40,7 +40,7 @@ _styles: >
 <div class="outside-row">
   <figure class="outside-photo" style="--ar: 0.667">
     <img src="/assets/img/outside/cayambe.jpg" alt="Three roped climbers walking down a snow ridge, with a broad glaciated mountain on the horizon." loading="lazy">
-    <figcaption>Descending from the summit of Cayambe (5,790 m), with Chimborazo (6,263 m) in the background.</figcaption>
+    <figcaption>Descending from the summit of Cayambe (5,790 m), with Antisana in the background.</figcaption>
   </figure>
   <figure class="outside-photo" style="--ar: 1.333">
     <img src="/assets/img/outside/cotopaxi.jpg" alt="Two climbers on a snow summit above a sea of cloud, one raising an ice axe." loading="lazy">
