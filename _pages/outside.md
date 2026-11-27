@@ -48,6 +48,11 @@ _styles: >
   </figure>
 </div>
 
+<figure class="outside-photo">
+  <img src="/assets/img/outside/cotopaxi_eruption.jpg" alt="A snow-capped volcano sending a long plume of ash across the horizon at sunrise, above shadowed highlands." loading="lazy">
+  <figcaption>Cotopaxi erupts at sunrise, seen from the bergschrund on Cayambe.</figcaption>
+</figure>
+
 <div class="outside-row">
   <figure class="outside-photo" style="--ar: 1.302">
     <img src="/assets/img/outside/rainier.jpg" alt="A line of climbers with heavy packs walking up a snowfield below the glaciated upper slopes of Mount Rainier." loading="lazy">
