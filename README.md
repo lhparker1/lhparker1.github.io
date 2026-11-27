@@ -15,6 +15,7 @@ Personal website of Liam H. Parker, built with [Jekyll](https://jekyllrb.com/) a
 | CV (PDF shown on the CV page)   | `cv/CV.tex`, `cv/pubs.tex`, `cv/talks.tex`      |
 | Contact icons on the home page  | `_data/socials.yml`                             |
 | Name, site URL, global settings | `_config.yml`                                   |
+| Background image and its fade   | `_sass/_site_custom.scss`, `assets/img/bg_*.webp` |
 
 A paper appears on the home page when its entry in `papers.bib` has `selected = {true}`.
 

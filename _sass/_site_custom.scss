@@ -1,0 +1,50 @@
+/******************************************************************************
+ * Site-specific styles: full-page background image.
+ *
+ * The image is a slice through the LiFT-reconstructed linear density field of
+ * the DESI DR1 luminous red galaxies. To change how strongly it shows, edit
+ * --bg-image-fade (0% = full strength, 100% = hidden) and --bg-panel-opacity.
+ ******************************************************************************/
+
+:root {
+  --bg-image: url("/assets/img/bg_light.webp");
+  --bg-image-fade: 35%;
+  --bg-panel-opacity: 88%;
+}
+
+html[data-theme="dark"] {
+  --bg-image: url("/assets/img/bg_dark.webp");
+  --bg-image-fade: 45%;
+  --bg-panel-opacity: 84%;
+}
+
+body {
+  background-image:
+    linear-gradient(
+      color-mix(in srgb, var(--global-bg-color) var(--bg-image-fade), transparent),
+      color-mix(in srgb, var(--global-bg-color) var(--bg-image-fade), transparent)
+    ),
+    var(--bg-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+// The content column sits on a mostly opaque panel so text stays readable.
+.container[role="main"] {
+  background-color: color-mix(in srgb, var(--global-bg-color) var(--bg-panel-opacity), transparent);
+  border-radius: 8px;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 576px) {
+  .container[role="main"] {
+    border-radius: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
