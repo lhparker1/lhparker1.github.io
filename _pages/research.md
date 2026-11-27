@@ -27,6 +27,14 @@ Key papers: [Parker et al. 2026](https://arxiv.org/abs/2609.14862), [Parker, Bay
 
 <div style="clear: both;"></div>
 
+## Lightcone Research
+
+*Description to come.*
+
+Code: [ASTRA](https://github.com/LightconeResearch/astra-spec), [Lightcone-CLI](https://github.com/LightconeResearch/lightcone-cli)
+
+<div style="clear: both;"></div>
+
 ## Foundation models for astronomy
 
 *Description to come.*
@@ -40,13 +48,5 @@ Key papers: [Parker, Lanusse, Shen et al. 2025](https://arxiv.org/abs/2510.17960
 *Description to come.*
 
 Key papers: [Lemos, Parker et al. 2024](https://arxiv.org/abs/2310.15256), [Hahn, Lemos, Parker et al. 2024](https://arxiv.org/abs/2310.15246)
-
-<div style="clear: both;"></div>
-
-## Lightcone Research
-
-*Description to come.*
-
-Code: [ASTRA](https://github.com/LightconeResearch/astra-spec), [Lightcone-CLI](https://github.com/LightconeResearch/lightcone-cli)
 
 <div style="clear: both;"></div>
