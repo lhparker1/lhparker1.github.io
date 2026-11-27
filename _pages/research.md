@@ -8,21 +8,19 @@ nav_order: 1
 _styles: >
   article h2 { margin-top: 3rem; }
   article h2:first-child { margin-top: 0.5rem; }
-  .research-figure { float: left; width: 400px; max-width: 48%; margin: 0.35rem 1.75rem 1rem 0; }
+  .research-figure { float: right; width: 400px; max-width: 48%; margin: 0.35rem 0 1rem 1.75rem; }
   .research-figure img { display: block; width: 100%; height: auto; background: #fff; padding: 0.6rem; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); }
-  .research-figure figcaption { font-size: 0.8rem; line-height: 1.35; color: var(--global-text-color-light); margin-top: 0.5rem; }
   @media (max-width: 700px) { .research-figure { float: none; width: 100%; max-width: 100%; margin: 1rem 0; } }
 ---
 
 <!-- Each section: an optional figure, a short paragraph, then key papers.
      To add a figure, put it in assets/img/ and copy the <figure class="research-figure"> block below;
-     it floats to the left of the text, as on Oliver's page. -->
+     it floats to the right of the text, as on Oliver's page. -->
 
 ## Neural field-level BAO reconstruction with DESI
 
 <figure class="research-figure">
 <img src="/assets/img/lift_inference_scheme.png" alt="Diagram of LiFT inference: input fields are cropped to subgrids, passed through LiFT, and the predicted subgrids are assembled into the full reconstructed field.">
-<figcaption>LiFT at inference: the input fields are cropped to subgrids, LiFT predicts each subgrid, and the predictions are tiled into the full reconstructed field. From <a href="https://arxiv.org/abs/2609.14862">Parker et al. 2026</a>.</figcaption>
 </figure>
 
 To constrain dark energy, DESI charts the Universe's expansion history with a standard ruler: baryon acoustic oscillations (BAO), sound waves from the early Universe that left a preferred separation between galaxies. Billions of years of non-linear gravitational evolution have blurred this ruler. Surveys sharpen it by partially reversing the gravitational displacements, but standard reconstruction treats gravity and galaxy bias as linear, and its error analysis is exact only for a Gaussian field, so it has to be calibrated with mock simulations and empirical corrections. My thesis develops the Linear Field Transformer (LiFT), a neural network that performs non-linear BAO reconstruction on real survey data without these assumptions and significantly increases the information recovered from the same galaxies.
