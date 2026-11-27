@@ -25,3 +25,6 @@ cv/*.aux
 cv/*.log
 cv/*.out
 cv/*.pdf
+
+# Generated at build time by scripts/fetch_repo_stats.py
+_data/repo_stats.json

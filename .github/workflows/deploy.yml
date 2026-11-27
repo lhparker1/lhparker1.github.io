@@ -58,6 +58,8 @@ on:
       - "!docs/INSTALL.md"
       - "!README.md"
   workflow_dispatch:
+  schedule:
+    - cron: "23 7 * * 1" # weekly, to refresh GitHub star counts on the Code page
 
 permissions:
   contents: write
@@ -93,6 +95,11 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
+      - name: Fetch GitHub repo stats ⭐
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/fetch_repo_stats.py
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick

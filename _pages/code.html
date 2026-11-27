@@ -14,17 +14,21 @@ _styles: >
   .code-card .code-desc { font-size: 0.9rem; margin: 0 0 0.5rem; }
   .code-card .code-stars { font-size: 0.8rem; color: var(--global-text-color-light); margin: 0; }
 ---
-<!-- Edit _data/code.yml to add or change projects. -->
+<!-- Edit _data/code.yml to add or change projects. Star counts and descriptions are fetched from GitHub
+     when the site is built (scripts/fetch_repo_stats.py); the values in code.yml are the fallback. -->
 <div class="code-grid">
 {%- for p in site.data.code %}
+{%- assign live = site.data.repo_stats[p.repo] %}
+{%- assign desc = live.description | default: p.description %}
+{%- assign stars = live.stars | default: p.stars %}
 <a class="code-card" href="https://github.com/{{ p.repo }}">
 <p class="code-name">{{ p.name }}</p>
 <p class="code-repo">{{ p.repo }}</p>
-{%- if p.description %}
-<p class="code-desc">{{ p.description }}</p>
+{%- if desc %}
+<p class="code-desc">{{ desc | escape }}</p>
 {%- endif %}
-{%- if p.stars %}
-<p class="code-stars"><i class="fa-solid fa-star"></i> {{ p.stars }} GitHub stars</p>
+{%- if stars %}
+<p class="code-stars"><i class="fa-solid fa-star"></i> {{ stars }} GitHub stars</p>
 {%- endif %}
 </a>
 {%- endfor %}
