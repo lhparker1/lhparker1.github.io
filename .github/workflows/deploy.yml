@@ -102,10 +102,23 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/fetch_repo_stats.py
-      - name: Fetch Google Scholar citation counts 🎓
+      # Daily (and on a manual run): read the counts from Google Scholar via SerpApi and,
+      # if they changed, commit _data/citations.yml so every later build uses them.
+      - name: Refresh Google Scholar citation counts 🎓
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         continue-on-error: true
-        timeout-minutes: 2
-        run: python3 scripts/fetch_scholar_citations.py
+        timeout-minutes: 3
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: |
+          python3 scripts/fetch_scholar_citations.py
+          if ! git diff --quiet -- _data/citations.yml; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add _data/citations.yml
+            git commit -m "Update Google Scholar citation counts"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
       - name: Install and Build 🔧
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick

@@ -1,19 +1,26 @@
 #!/usr/bin/env python3
 """Refresh per-paper Google Scholar citation counts in _data/citations.yml.
 
-Run at build time by .github/workflows/deploy.yml (and so on every push and on
-the weekly schedule). Google Scholar has no API and sometimes refuses automated
-requests; when that happens this script exits non-zero WITHOUT touching the
-file, so the site keeps showing the last numbers committed to the repository.
+Run by .github/workflows/deploy.yml on its daily schedule (and on a manual run);
+the workflow commits the file back to the repository when the counts change.
 
-No third-party packages: the public profile page is fetched and parsed directly.
+Google Scholar has no API and refuses requests from GitHub's servers, so the
+counts are read through SerpApi's Google Scholar Author API when the SERPAPI_KEY
+environment variable is set (a repository secret; one search per run). Without
+the key the public profile page is fetched directly, which works from a home
+network but not from GitHub.
+
+On any failure the script exits non-zero WITHOUT touching the file, so the site
+keeps showing the last committed numbers. No third-party packages are needed.
 """
 
 import datetime
 import html
+import json
 import os
 import re
 import sys
+import urllib.parse
 import urllib.request
 
 SOCIALS = "_data/socials.yml"
@@ -61,6 +68,28 @@ def parse(page, user):
     return papers
 
 
+def fetch_serpapi(user, key):
+    """One SerpApi search: the author's articles, up to 100, with citation counts."""
+    query = urllib.parse.urlencode(
+        {"engine": "google_scholar_author", "author_id": user, "hl": "en", "num": 100, "api_key": key}
+    )
+    with urllib.request.urlopen("https://serpapi.com/search.json?" + query, timeout=60) as r:
+        data = json.load(r)
+    if data.get("error"):
+        raise RuntimeError(data["error"])
+    papers = {}
+    for art in data.get("articles", []):
+        cid = art.get("citation_id") or ""
+        if not cid.startswith(user + ":"):
+            continue
+        papers[cid] = {
+            "citations": int((art.get("cited_by") or {}).get("value") or 0),
+            "title": (art.get("title") or "").strip(),
+            "year": str(art.get("year") or ""),
+        }
+    return papers
+
+
 def previous_total():
     if not os.path.exists(OUTPUT):
         return 0
@@ -86,24 +115,35 @@ def write(papers):
             f"    title: {q(p['title'])}",
             f"    year: {q(p['year'])}",
         ]
+    new = "\n".join(lines) + "\n"
+    body = lambda text: [l for l in text.splitlines() if "last_updated" not in l]
+    if os.path.exists(OUTPUT):
+        with open(OUTPUT) as f:
+            if body(f.read()) == body(new):
+                return False
     with open(OUTPUT, "w") as f:
-        f.write("\n".join(lines) + "\n")
+        f.write(new)
+    return True
 
 
 def main():
     user = scholar_user_id()
+    key = os.environ.get("SERPAPI_KEY", "").strip()
+    source = "SerpApi" if key else "Google Scholar directly"
     try:
-        page = fetch(user)
-    except Exception as e:  # network error, 403/429, ...
-        sys.exit(f"Scholar request failed ({e}); keeping existing {OUTPUT}")
-    papers = parse(page, user)
+        papers = fetch_serpapi(user, key) if key else parse(fetch(user), user)
+    except Exception as e:  # network error, 403/429, bad key, ...
+        # never echo the request URL: it contains the API key
+        reason = f"HTTP {e.code}" if hasattr(e, "code") else (str(e) if isinstance(e, RuntimeError) or not key else type(e).__name__)
+        sys.exit(f"request via {source} failed ({reason}); keeping existing {OUTPUT}")
     total = sum(p["citations"] for p in papers.values())
     if len(papers) < MIN_ROWS:
-        sys.exit(f"only parsed {len(papers)} papers (blocked or page changed); keeping existing {OUTPUT}")
+        sys.exit(f"only got {len(papers)} papers via {source}; keeping existing {OUTPUT}")
     if total < 0.8 * previous_total():
-        sys.exit(f"parsed total {total} is far below the previous {previous_total()}; keeping existing {OUTPUT}")
-    write(papers)
-    print(f"wrote {len(papers)} papers, {total} citations in total, to {OUTPUT}")
+        sys.exit(f"total {total} is far below the previous {previous_total()}; keeping existing {OUTPUT}")
+    changed = write(papers)
+    print(f"{len(papers)} papers, {total} citations in total, via {source}; "
+          + (f"updated {OUTPUT}" if changed else "no change"))
 
 
 if __name__ == "__main__":

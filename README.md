@@ -38,3 +38,11 @@ With Docker installed: `docker compose up`, then open <http://localhost:8080>.
 ## License
 
 Theme code is from al-folio, under the MIT license (see `LICENSE`).
+
+## Citation counts
+
+The badges next to each publication show Google Scholar counts from `_data/citations.yml`. A paper gets a badge when its
+entry in `_bibliography/papers.bib` has a `google_scholar_id`. Once a day the deploy workflow runs
+`scripts/fetch_scholar_citations.py`, which reads the counts through [SerpApi](https://serpapi.com) (Google Scholar
+blocks GitHub's servers directly) and commits the file if anything changed. It needs a repository secret named
+`SERPAPI_KEY`; without it the counts simply stay as last committed.
