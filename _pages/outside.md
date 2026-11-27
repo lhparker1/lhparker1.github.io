@@ -29,7 +29,7 @@ _styles: >
 <div class="outside-row">
   <figure class="outside-photo" style="--ar: 1.333">
     <img src="/assets/img/outside/entreves.jpg" alt="A climber standing on the narrow rock ridge of the Aiguilles d'Entrèves, with glaciers and the peaks of the Mont Blanc massif behind." loading="lazy">
-    <figcaption>Traverse of the Aiguilles d'Entrèves, Mont Blanc massif.</figcaption>
+    <figcaption>Traverse of the Aiguilles d'Entrèves (3,600 m), Mont Blanc massif.</figcaption>
   </figure>
   <figure class="outside-photo" style="--ar: 0.75">
     <img src="/assets/img/outside/kilimanjaro.jpg" alt="A climber in a blue down jacket beside the summit sign at Uhuru Peak on Kilimanjaro." loading="lazy">
@@ -40,7 +40,7 @@ _styles: >
 <div class="outside-row">
   <figure class="outside-photo" style="--ar: 0.667">
     <img src="/assets/img/outside/cayambe.jpg" alt="Three roped climbers walking down a snow ridge, with a broad glaciated mountain on the horizon." loading="lazy">
-    <figcaption>Descending from the summit of Cayambe, with Chimborazo in the background.</figcaption>
+    <figcaption>Descending from the summit of Cayambe (5,790 m), with Chimborazo (6,263 m) in the background.</figcaption>
   </figure>
   <figure class="outside-photo" style="--ar: 1.333">
     <img src="/assets/img/outside/cotopaxi.jpg" alt="Two climbers on a snow summit above a sea of cloud, one raising an ice axe." loading="lazy">
@@ -51,10 +51,10 @@ _styles: >
 <div class="outside-row">
   <figure class="outside-photo" style="--ar: 1.302">
     <img src="/assets/img/outside/rainier.jpg" alt="A line of climbers with heavy packs walking up a snowfield below the glaciated upper slopes of Mount Rainier." loading="lazy">
-    <figcaption>Moving up to Camp Muir, Mount Rainier.</figcaption>
+    <figcaption>Moving up to Camp Muir, Mount Rainier (4,392 m).</figcaption>
   </figure>
   <figure class="outside-photo" style="--ar: 0.75">
     <img src="/assets/img/outside/shasta.jpg" alt="A climber with a large pack, helmet and coiled rope walking up a snow-covered valley toward Mount Shasta." loading="lazy">
-    <figcaption>On the approach to the north ridge of Mount Shasta.</figcaption>
+    <figcaption>On the approach to the north ridge of Mount Shasta (4,322 m).</figcaption>
   </figure>
 </div>
