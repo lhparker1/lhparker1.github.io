@@ -8,13 +8,15 @@ nav_order: 1
 _styles: >
   article h2 { margin-top: 3rem; }
   article h2:first-child { margin-top: 0.5rem; }
-  .research-figure { margin: 1.5rem 0; }
-  .research-figure img { display: block; width: 100%; height: auto; background: #fff; padding: 0.75rem; border-radius: 6px; }
-  .research-figure figcaption { font-size: 0.85rem; color: var(--global-text-color-light); margin-top: 0.5rem; }
+  .research-figure { float: left; width: 400px; max-width: 48%; margin: 0.35rem 1.75rem 1rem 0; }
+  .research-figure img { display: block; width: 100%; height: auto; background: #fff; padding: 0.6rem; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); }
+  .research-figure figcaption { font-size: 0.8rem; line-height: 1.35; color: var(--global-text-color-light); margin-top: 0.5rem; }
+  @media (max-width: 700px) { .research-figure { float: none; width: 100%; max-width: 100%; margin: 1rem 0; } }
 ---
 
 <!-- Each section: an optional figure, a short paragraph, then key papers.
-     To add a figure, put it in assets/img/ and copy the <figure class="research-figure"> block below. -->
+     To add a figure, put it in assets/img/ and copy the <figure class="research-figure"> block below;
+     it floats to the left of the text, as on Oliver's page. -->
 
 ## Neural field-level BAO reconstruction with DESI
 
