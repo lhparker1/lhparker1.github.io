@@ -20,7 +20,7 @@ _styles: >
   To add a photo: put the file in assets/img/outside/ and copy a <figure> block.
   A figure on its own spans the full width. Figures inside <div class="outside-row">
   share one row at equal height: set --ar on each to its width divided by its height
-  (1.333 for a 4:3 landscape photo, 0.75 for a 3:4 portrait one).
+  (1.333 for a 4:3 landscape photo, 0.75 for a 3:4 portrait one, 0.667 for 2:3).
 -->
 
 ## Mountaineering
@@ -33,5 +33,9 @@ _styles: >
   <figure class="outside-photo" style="--ar: 0.75">
     <img src="/assets/img/outside/kilimanjaro.jpg" alt="A climber in a blue down jacket beside the summit sign at Uhuru Peak on Kilimanjaro." loading="lazy">
     <figcaption>Uhuru Peak, Kilimanjaro (5,895 m).</figcaption>
+  </figure>
+  <figure class="outside-photo" style="--ar: 0.667">
+    <img src="/assets/img/outside/cayambe.jpg" alt="Three roped climbers walking down a snow ridge, with a broad glaciated mountain on the horizon." loading="lazy">
+    <figcaption>Descending from the summit of Cayambe, with Chimborazo in the background.</figcaption>
   </figure>
 </div>
