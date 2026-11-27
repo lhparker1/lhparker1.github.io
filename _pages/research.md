@@ -6,6 +6,8 @@ description:
 nav: true
 nav_order: 1
 _styles: >
+  article h2 { margin-top: 3rem; }
+  article h2:first-child { margin-top: 0.5rem; }
   .research-figure { margin: 1.5rem 0; }
   .research-figure img { display: block; width: 100%; height: auto; background: #fff; padding: 0.75rem; border-radius: 6px; }
   .research-figure figcaption { font-size: 0.85rem; color: var(--global-text-color-light); margin-top: 0.5rem; }
