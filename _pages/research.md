@@ -12,11 +12,11 @@ nav_order: 1
      <img src="/assets/img/NAME.png" alt="..." style="float: right; margin: 0 0 1em 1.5em; width: 260px; border-radius: 4px;">
 -->
 
-## Field-level BAO reconstruction with DESI
+## Neural field-level BAO reconstruction with DESI
 
-*Description to come.*
+To constrain dark energy, DESI charts the Universe's expansion history with a standard ruler: baryon acoustic oscillations (BAO), sound waves from the early Universe that left a preferred separation between galaxies. Billions of years of non-linear gravitational evolution have blurred this ruler. Surveys sharpen it by partially reversing the gravitational displacements, but standard reconstruction treats gravity and galaxy bias as linear, and its error analysis is exact only for a Gaussian field, so it has to be calibrated with mock simulations and empirical corrections. My thesis develops the Linear Field Transformer (LiFT), a neural network that performs non-linear BAO reconstruction on real survey data without these assumptions and significantly increases the information recovered from the same galaxies.
 
-Key papers: [Parker et al. 2026](https://arxiv.org/abs/2609.14862), [Bayer, Parker et al. 2026](https://arxiv.org/abs/2603.15732), [Parker, Bayer & Seljak 2025](https://arxiv.org/abs/2504.01092)
+Key papers: [Parker et al. 2026](https://arxiv.org/abs/2609.14862), [Parker, Bayer & Seljak 2025](https://arxiv.org/abs/2504.01092), [Bayer, Parker et al. 2026](https://arxiv.org/abs/2603.15732)
 
 <div style="clear: both;"></div>
 
