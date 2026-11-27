@@ -48,3 +48,8 @@ body {
     padding-right: 1rem;
   }
 }
+
+// Home page: more room between the bio and "selected publications".
+article .clearfix + h2 {
+  margin-top: 3.5rem;
+}
