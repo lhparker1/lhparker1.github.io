@@ -55,7 +55,7 @@ Key papers: [Parker, Lanusse, Shen et al. 2025](https://arxiv.org/abs/2510.17960
 <img src="/assets/img/simbig_cnn_posterior.png" alt="Corner plot of posterior constraints on five cosmological parameters from BOSS galaxies, comparing a field-level convolutional neural network analysis with power spectrum analyses; an inset enlarges the matter density and clustering amplitude panel, where the neural network contours are tighter.">
 </figure>
 
-*Description to come.*
+Standard analyses compress a galaxy survey into its two-point statistics, which miss the information on small scales and in the non-Gaussian structure of the map. Simulation-based inference instead trains neural networks on simulated galaxy catalogs that include the survey's geometry and observational effects. With collaborators, I applied this to BOSS galaxies at the field level, and the resulting constraint on σ8 is 2.65 times tighter than a standard power spectrum analysis.
 
 Key papers: [Lemos, Parker et al. 2024](https://arxiv.org/abs/2310.15256), [Hahn, Lemos, Parker et al. 2024](https://arxiv.org/abs/2310.15246)
 
