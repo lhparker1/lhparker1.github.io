@@ -16,9 +16,17 @@ _styles: >
   @media (max-width: 700px) { .outside-row { display: block; } .outside-row .outside-photo { margin: 0 0 1.5rem; } }
 ---
 
-<!--
-  To add a photo: put the file in assets/img/outside/ and copy a <figure> block.
-  A figure on its own spans the full width. Figures inside <div class="outside-row">
+{% comment %}
+  To add a photo: put the file in assets/img/outside/ and copy a figure block.
+  A figure on its own spans the full width. Figures inside a div with class
+  "outside-row" share one row at equal height: set --ar on each to its width
+  divided by its height (1.333 for a 4:3 landscape photo, 0.75 for a 3:4
+  portrait one, 0.667 for 2:3). One landscape plus one portrait fills a row well.
+{% endcomment %}
+
+## Mountaineering
+
+<div class="outside-row">
   <figure class="outside-photo" style="--ar: 1.333">
     <img src="/assets/img/outside/entreves.jpg" alt="A climber standing on the narrow rock ridge of the Aiguilles d'Entrèves, with glaciers and the peaks of the Mont Blanc massif behind." loading="lazy">
     <figcaption>Traverse of the Aiguilles d'Entrèves, Mont Blanc massif.</figcaption>
@@ -37,5 +45,16 @@ _styles: >
   <figure class="outside-photo" style="--ar: 1.333">
     <img src="/assets/img/outside/cotopaxi.jpg" alt="Two climbers on a snow summit above a sea of cloud, one raising an ice axe." loading="lazy">
     <figcaption>Summit of Cotopaxi (5,897 m).</figcaption>
+  </figure>
+</div>
+
+<div class="outside-row">
+  <figure class="outside-photo" style="--ar: 1.302">
+    <img src="/assets/img/outside/rainier.jpg" alt="A line of climbers with heavy packs walking up a snowfield below the glaciated upper slopes of Mount Rainier." loading="lazy">
+    <figcaption>Moving up to Camp Muir, Mount Rainier.</figcaption>
+  </figure>
+  <figure class="outside-photo" style="--ar: 0.75">
+    <img src="/assets/img/outside/shasta.jpg" alt="A climber with a large pack, helmet and coiled rope walking up a snow-covered valley toward Mount Shasta." loading="lazy">
+    <figcaption>On the approach to the north ridge of Mount Shasta.</figcaption>
   </figure>
 </div>
