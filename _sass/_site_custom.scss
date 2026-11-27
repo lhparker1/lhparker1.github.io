@@ -1,20 +1,20 @@
 /******************************************************************************
  * Site-specific styles: full-page background image.
  *
- * The image is a slice through the LiFT-reconstructed linear density field of
- * the DESI DR1 luminous red galaxies. To change how strongly it shows, edit
+ * The image is a small Zel'dovich-approximation simulation of the cosmic web
+ * (made by scripts/make_background.py). To change how strongly it shows, edit
  * --bg-image-fade (0% = full strength, 100% = hidden) and --bg-panel-opacity.
  ******************************************************************************/
 
 :root {
   --bg-image: url("/assets/img/bg_light.webp");
-  --bg-image-fade: 35%;
+  --bg-image-fade: 30%;
   --bg-panel-opacity: 88%;
 }
 
 html[data-theme="dark"] {
   --bg-image: url("/assets/img/bg_dark.webp");
-  --bg-image-fade: 45%;
+  --bg-image-fade: 35%;
   --bg-panel-opacity: 84%;
 }
 
