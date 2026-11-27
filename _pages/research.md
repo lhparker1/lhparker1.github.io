@@ -5,14 +5,21 @@ title: Research
 description:
 nav: true
 nav_order: 1
+_styles: >
+  .research-figure { margin: 1.5rem 0; }
+  .research-figure img { display: block; width: 100%; height: auto; background: #fff; padding: 0.75rem; border-radius: 6px; }
+  .research-figure figcaption { font-size: 0.85rem; color: var(--global-text-color-light); margin-top: 0.5rem; }
 ---
 
-<!-- Each section: an optional image, a short paragraph, then key papers.
-     To add a figure, put it in assets/img/ and use:
-     <img src="/assets/img/NAME.png" alt="..." style="float: right; margin: 0 0 1em 1.5em; width: 260px; border-radius: 4px;">
--->
+<!-- Each section: an optional figure, a short paragraph, then key papers.
+     To add a figure, put it in assets/img/ and copy the <figure class="research-figure"> block below. -->
 
 ## Neural field-level BAO reconstruction with DESI
+
+<figure class="research-figure">
+<img src="/assets/img/lift_inference_scheme.png" alt="Diagram of LiFT inference: input fields are cropped to subgrids, passed through LiFT, and the predicted subgrids are assembled into the full reconstructed field.">
+<figcaption>LiFT at inference: the input fields are cropped to subgrids, LiFT predicts each subgrid, and the predictions are tiled into the full reconstructed field. From <a href="https://arxiv.org/abs/2609.14862">Parker et al. 2026</a>.</figcaption>
+</figure>
 
 To constrain dark energy, DESI charts the Universe's expansion history with a standard ruler: baryon acoustic oscillations (BAO), sound waves from the early Universe that left a preferred separation between galaxies. Billions of years of non-linear gravitational evolution have blurred this ruler. Surveys sharpen it by partially reversing the gravitational displacements, but standard reconstruction treats gravity and galaxy bias as linear, and its error analysis is exact only for a Gaussian field, so it has to be calibrated with mock simulations and empirical corrections. My thesis develops the Linear Field Transformer (LiFT), a neural network that performs non-linear BAO reconstruction on real survey data without these assumptions and significantly increases the information recovered from the same galaxies.
 
