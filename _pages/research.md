@@ -33,7 +33,7 @@ Key papers: [Parker et al. 2026](https://arxiv.org/abs/2609.14862), [Parker, Bay
 
 *Description to come.*
 
-Code: [ASTRA](https://github.com/LightconeResearch/astra-spec), [Lightcone-CLI](https://github.com/LightconeResearch/lightcone-cli)
+Website: [lightconeresearch.org](https://lightconeresearch.org/)
 
 <div style="clear: both;"></div>
 
