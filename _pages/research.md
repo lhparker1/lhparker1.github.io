@@ -51,6 +51,10 @@ Key papers: [Parker, Lanusse, Shen et al. 2025](https://arxiv.org/abs/2510.17960
 
 ## Simulation-based inference of galaxy clustering
 
+<figure class="research-figure">
+<img src="/assets/img/simbig_cnn_posterior.png" alt="Corner plot of posterior constraints on five cosmological parameters from BOSS galaxies, comparing a field-level convolutional neural network analysis with power spectrum analyses; an inset enlarges the matter density and clustering amplitude panel, where the neural network contours are tighter.">
+</figure>
+
 *Description to come.*
 
 Key papers: [Lemos, Parker et al. 2024](https://arxiv.org/abs/2310.15256), [Hahn, Lemos, Parker et al. 2024](https://arxiv.org/abs/2310.15246)
