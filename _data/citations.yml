@@ -2,10 +2,10 @@
 # Refreshed at build time by scripts/fetch_scholar_citations.py; the copy
 # committed here is the fallback used when Scholar refuses the request.
 metadata:
-  last_updated: "2026-11-27"
+  last_updated: "2026-11-28"
 papers:
   "CjYa0N4AAAAJ:-f6ydRqryjwC":
-    citations: 271
+    citations: 272
     title: "The well: a large-scale collection of diverse physics simulations for machine learning"
     year: "2025"
   "CjYa0N4AAAAJ:0EnyYjriUFMC":
@@ -13,7 +13,7 @@ papers:
     title: "Cosmological constraints from the nonlinear galaxy bispectrum"
     year: "2024"
   "CjYa0N4AAAAJ:2osOgNQ5qMEC":
-    citations: 25
+    citations: 26
     title: "Neural collapse in the intermediate hidden layers of classification neural networks"
     year: "2023"
   "CjYa0N4AAAAJ:35N4QoGY0k4C":
@@ -29,7 +29,7 @@ papers:
     title: "AION-1: Omnimodal foundation model for astronomical sciences"
     year: "2026"
   "CjYa0N4AAAAJ:8k81kl-MbHgC":
-    citations: 109
+    citations: 110
     title: "Field-level simulation-based inference of galaxy clustering with convolutional neural networks"
     year: "2024"
   "CjYa0N4AAAAJ:9ZlFYXVOiuMC":
@@ -41,7 +41,7 @@ papers:
     title: "Contextual counting: A mechanistic study of transformers on a quantitative task"
     year: "2024"
   "CjYa0N4AAAAJ:GnPB-g6toBAC":
-    citations: 26
+    citations: 27
     title: "Cosmological constraints using simulation-based inference of galaxy clustering with marked power spectra"
     year: "2025"
   "CjYa0N4AAAAJ:J_g5lzvAfSwC":
@@ -49,7 +49,7 @@ papers:
     title: "A Probabilistic Autoencoder for Galaxy SED Reconstruction and Redshift Estimation: Application to Mock SPHEREx Spectrophotometry"
     year: "2026"
   "CjYa0N4AAAAJ:KlAtU1dfN6UC":
-    citations: 217
+    citations: 218
     title: "AstroCLIP: a cross-modal foundation model for galaxies"
     year: "2024"
   "CjYa0N4AAAAJ:M3NEmzRMIkIC":
@@ -57,11 +57,11 @@ papers:
     title: "Predicting partially observable dynamical systems via diffusion models with a multiscale inference scheme"
     year: "2026"
   "CjYa0N4AAAAJ:MXK_kJrjxJIC":
-    citations: 52
+    citations: 53
     title: "Cosmological constraints from the redshift-space galaxy skew spectra"
     year: "2024"
   "CjYa0N4AAAAJ:TQgYirikUcIC":
-    citations: 291
+    citations: 292
     title: "Multiple physics pretraining for spatiotemporal surrogate models"
     year: "2024"
   "CjYa0N4AAAAJ:dhFuZR0502QC":
@@ -89,7 +89,7 @@ papers:
     title: "Field-Level Baryon Acoustic Oscillation Reconstruction of the DESI DR1 Luminous Red Galaxies with Linear Field Transformer (LiFT)"
     year: "2026"
   "CjYa0N4AAAAJ:qxL8FJ1GzNcC":
-    citations: 44
+    citations: 43
     title: "Cosmological constraints from non-Gaussian and nonlinear galaxy clustering using the SimBIG inference framework"
     year: "2024"
   "CjYa0N4AAAAJ:u5HHmVD_uO8C":
