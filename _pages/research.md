@@ -31,7 +31,7 @@ Key papers: [Parker et al. 2026](https://arxiv.org/abs/2609.14862), [Parker, Bay
 
 ## Lightcone Research
 
-*Description to come.*
+AI agents can now carry out much of a computational analysis, which makes results faster to produce and harder to trust. At Lightcone Research, an initiative of UC Berkeley and CNRS, we build open tools and standards for AI-assisted science. They record an analysis's inputs, its methodological choices and the reasoning behind them, so that other scientists can reproduce, inspect and build on each result.
 
 Website: [lightconeresearch.org](https://lightconeresearch.org/)
 

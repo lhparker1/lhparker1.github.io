@@ -6,7 +6,7 @@ description:
 nav: true
 nav_order: 6
 _styles: >
-  article h2 { margin-top: 3rem; }
+  article h2 { margin-top: 2rem; }
   article h2:first-child { margin-top: 0.5rem; }
   .outside-photo { margin: 1rem 0 2rem; }
   .outside-photo img { display: block; width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); }
@@ -23,6 +23,8 @@ _styles: >
   divided by its height (1.333 for a 4:3 landscape photo, 0.75 for a 3:4
   portrait one, 0.667 for 2:3). One landscape plus one portrait fills a row well.
 {% endcomment %}
+
+Away from physics I spend as much time as I can in the mountains, mostly on glaciated peaks and alpine ridges. I also train in Olympic weightlifting, and competed at the USA National Championships in 2024 and 2025. Before that I rowed.
 
 ## Mountaineering
 
