@@ -24,7 +24,7 @@ _styles: >
   portrait one, 0.667 for 2:3). One landscape plus one portrait fills a row well.
 {% endcomment %}
 
-Away from physics I spend as much time as I can in the mountains, mostly on glaciated peaks and alpine ridges. I also train in Olympic weightlifting, and competed at the USA National Championships in 2024 and 2025. Before that I rowed.
+I like to spend time outdoors, in particular anywhere on a mountain. I have also been learning guitar, although it's a long process. I used to compete in Olympic-style weightlifting, including at the USA National Championships in 2024 and 2025.
 
 ## Mountaineering
 
